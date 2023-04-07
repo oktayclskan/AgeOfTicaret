@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33027.164
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgeOfTicaret", "AgeOfTicaret\AgeOfTicaret.csproj", "{6672FD02-CFB7-4F10-952C-94E958416597}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{5E24B68C-D9BE-446B-A13E-E170F57C0058}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6672FD02-CFB7-4F10-952C-94E958416597}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6672FD02-CFB7-4F10-952C-94E958416597}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6672FD02-CFB7-4F10-952C-94E958416597}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6672FD02-CFB7-4F10-952C-94E958416597}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E24B68C-D9BE-446B-A13E-E170F57C0058}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E24B68C-D9BE-446B-A13E-E170F57C0058}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E24B68C-D9BE-446B-A13E-E170F57C0058}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E24B68C-D9BE-446B-A13E-E170F57C0058}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BFF2C8A6-FADB-479C-A490-1C2BE8EBE294}
+	EndGlobalSection
+EndGlobal
