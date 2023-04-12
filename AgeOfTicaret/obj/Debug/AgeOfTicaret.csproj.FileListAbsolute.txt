@@ -13,3 +13,4 @@ C:\Users\Oktay\source\repos\AgeOfTicaret\AgeOfTicaret\obj\Debug\AgeOfTicaret.Kat
 C:\Users\Oktay\source\repos\AgeOfTicaret\AgeOfTicaret\bin\Debug\DataAccessLayer.dll
 C:\Users\Oktay\source\repos\AgeOfTicaret\AgeOfTicaret\bin\Debug\DataAccessLayer.pdb
 C:\Users\Oktay\source\repos\AgeOfTicaret\AgeOfTicaret\obj\Debug\AgeOfTicaret.csproj.CopyComplete
+C:\Users\Oktay\source\repos\AgeOfTicaret\AgeOfTicaret\obj\Debug\AgeOfTicaret.UrunIslemleriFrom.resources

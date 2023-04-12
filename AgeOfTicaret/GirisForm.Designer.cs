@@ -29,6 +29,7 @@ namespace AgeOfTicaret
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GirisForm));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btn_kapat = new System.Windows.Forms.Button();
             this.btn_giris = new System.Windows.Forms.Button();
@@ -100,6 +101,7 @@ namespace AgeOfTicaret
             this.tb_sifre.Name = "tb_sifre";
             this.tb_sifre.Size = new System.Drawing.Size(234, 20);
             this.tb_sifre.TabIndex = 0;
+            this.tb_sifre.Text = "12345";
             this.tb_sifre.UseSystemPasswordChar = true;
             // 
             // tb_kullaniciAdi
@@ -108,6 +110,7 @@ namespace AgeOfTicaret
             this.tb_kullaniciAdi.Name = "tb_kullaniciAdi";
             this.tb_kullaniciAdi.Size = new System.Drawing.Size(234, 20);
             this.tb_kullaniciAdi.TabIndex = 0;
+            this.tb_kullaniciAdi.Text = "oktita01";
             // 
             // pictureBox1
             // 
@@ -126,6 +129,7 @@ namespace AgeOfTicaret
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "GirisForm";
             this.Text = "GirisForm";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.GirisForm_FormClosed);

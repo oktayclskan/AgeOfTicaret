@@ -7,12 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DataAccessLayer;
 
 namespace AgeOfTicaret
 {
     public partial class GirisForm : Form
     {
         bool girisVar = false;
+        DataModel dm = new DataModel();
         public GirisForm()
         {
             InitializeComponent();
@@ -29,8 +31,10 @@ namespace AgeOfTicaret
         {
             if (!string.IsNullOrEmpty(tb_kullaniciAdi.Text) && !string.IsNullOrEmpty(tb_sifre.Text))
             {
-                if (tb_kullaniciAdi.Text == "admin" && tb_sifre.Text == "12345")
+                Employes model = dm.EmployeeLogin(tb_kullaniciAdi.Text, tb_sifre.Text);
+                if (model.UserName !=null)
                 {
+                    Helpers.GirisYapanKullanici = model;
                     girisVar = true;
                     this.Close();
                 }

@@ -11,6 +11,6 @@ namespace DataAccessLayer
         public int ID { get; set; }
         public string CategoryName { get; set; }
         public string Descripton { get; set; }
-        public string Picture { get; set; }
+        public byte[] Picture { get; set; }
     }
 }
