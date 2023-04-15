@@ -31,6 +31,8 @@ namespace AgeOfTicaret
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pb_resim = new System.Windows.Forms.PictureBox();
+            this.btn_tedarikciEkle = new System.Windows.Forms.Button();
             this.btn_kategoriEkle = new System.Windows.Forms.Button();
             this.btn_urunEkle = new System.Windows.Forms.Button();
             this.cb_Durum = new System.Windows.Forms.CheckBox();
@@ -53,8 +55,6 @@ namespace AgeOfTicaret
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btn_tedarikciEkle = new System.Windows.Forms.Button();
-            this.pb_resim = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_resim)).BeginInit();
@@ -105,6 +105,24 @@ namespace AgeOfTicaret
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ürün Bilgileri";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // pb_resim
+            // 
+            this.pb_resim.Location = new System.Drawing.Point(600, 20);
+            this.pb_resim.Name = "pb_resim";
+            this.pb_resim.Size = new System.Drawing.Size(157, 146);
+            this.pb_resim.TabIndex = 6;
+            this.pb_resim.TabStop = false;
+            // 
+            // btn_tedarikciEkle
+            // 
+            this.btn_tedarikciEkle.Location = new System.Drawing.Point(270, 155);
+            this.btn_tedarikciEkle.Name = "btn_tedarikciEkle";
+            this.btn_tedarikciEkle.Size = new System.Drawing.Size(23, 23);
+            this.btn_tedarikciEkle.TabIndex = 5;
+            this.btn_tedarikciEkle.Text = "+";
+            this.btn_tedarikciEkle.UseVisualStyleBackColor = true;
             // 
             // btn_kategoriEkle
             // 
@@ -290,23 +308,6 @@ namespace AgeOfTicaret
             this.label1.TabIndex = 0;
             this.label1.Text = "ID : ";
             // 
-            // btn_tedarikciEkle
-            // 
-            this.btn_tedarikciEkle.Location = new System.Drawing.Point(270, 155);
-            this.btn_tedarikciEkle.Name = "btn_tedarikciEkle";
-            this.btn_tedarikciEkle.Size = new System.Drawing.Size(23, 23);
-            this.btn_tedarikciEkle.TabIndex = 5;
-            this.btn_tedarikciEkle.Text = "+";
-            this.btn_tedarikciEkle.UseVisualStyleBackColor = true;
-            // 
-            // pb_resim
-            // 
-            this.pb_resim.Location = new System.Drawing.Point(600, 20);
-            this.pb_resim.Name = "pb_resim";
-            this.pb_resim.Size = new System.Drawing.Size(157, 146);
-            this.pb_resim.TabIndex = 6;
-            this.pb_resim.TabStop = false;
-            // 
             // UrunIslemleriFrom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -316,6 +317,7 @@ namespace AgeOfTicaret
             this.Controls.Add(this.dataGridView1);
             this.Name = "UrunIslemleriFrom";
             this.Text = "UrunIslemleriFrom";
+            this.Load += new System.EventHandler(this.UrunIslemleriFrom_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

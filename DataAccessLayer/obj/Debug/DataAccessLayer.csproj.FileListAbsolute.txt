@@ -4,3 +4,9 @@ C:\Users\Oktay\source\repos\AgeOfTicaret\DataAccessLayer\obj\Debug\DataAccessLay
 C:\Users\Oktay\source\repos\AgeOfTicaret\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
 C:\Users\Oktay\source\repos\AgeOfTicaret\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 C:\Users\Oktay\source\repos\AgeOfTicaret\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+C:\Users\rampa\OneDrive\Masaüstü\AgeOfTicaret-main\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\rampa\OneDrive\Masaüstü\AgeOfTicaret-main\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\rampa\OneDrive\Masaüstü\AgeOfTicaret-main\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\rampa\OneDrive\Masaüstü\AgeOfTicaret-main\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\rampa\OneDrive\Masaüstü\AgeOfTicaret-main\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\rampa\OneDrive\Masaüstü\AgeOfTicaret-main\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

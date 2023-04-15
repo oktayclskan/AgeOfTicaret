@@ -53,5 +53,17 @@ namespace AgeOfTicaret
             frm.MdiParent = this;
             frm.Show();
         }
+
+        private void TSMI_musteri_Click(object sender, EventArgs e)
+        {
+            tb_fax frm = new tb_fax();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }

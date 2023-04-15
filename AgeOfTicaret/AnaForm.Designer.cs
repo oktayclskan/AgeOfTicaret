@@ -40,6 +40,7 @@ namespace AgeOfTicaret
             this.TSMI_UrunEkle = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.TSSL_Kullanici = new System.Windows.Forms.ToolStripStatusLabel();
+            this.TSMI_musteri = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -54,6 +55,7 @@ namespace AgeOfTicaret
             this.menuStrip1.Size = new System.Drawing.Size(775, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // dosyaToolStripMenuItem
             // 
@@ -68,7 +70,8 @@ namespace AgeOfTicaret
             this.TSMI_KategroiEkle,
             this.toolStripSeparator1,
             this.TSMI_Urunler,
-            this.TSMI_UrunEkle});
+            this.TSMI_UrunEkle,
+            this.TSMI_musteri});
             this.ürünİşlemleriToolStripMenuItem.Name = "ürünİşlemleriToolStripMenuItem";
             this.ürünİşlemleriToolStripMenuItem.Size = new System.Drawing.Size(92, 20);
             this.ürünİşlemleriToolStripMenuItem.Text = "Ürün İşlemleri";
@@ -119,6 +122,13 @@ namespace AgeOfTicaret
             this.TSSL_Kullanici.Name = "TSSL_Kullanici";
             this.TSSL_Kullanici.Size = new System.Drawing.Size(0, 17);
             // 
+            // TSMI_musteri
+            // 
+            this.TSMI_musteri.Name = "TSMI_musteri";
+            this.TSMI_musteri.Size = new System.Drawing.Size(180, 22);
+            this.TSMI_musteri.Text = "Müşteri İşlemleri";
+            this.TSMI_musteri.Click += new System.EventHandler(this.TSMI_musteri_Click);
+            // 
             // AnaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -153,5 +163,6 @@ namespace AgeOfTicaret
         private System.Windows.Forms.ToolStripMenuItem TSMI_UrunEkle;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel TSSL_Kullanici;
+        private System.Windows.Forms.ToolStripMenuItem TSMI_musteri;
     }
 }

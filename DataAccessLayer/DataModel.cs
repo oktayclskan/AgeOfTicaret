@@ -77,11 +77,9 @@ namespace DataAccessLayer
                 Category cg = new Category();
                 while (reader.Read())
                 {
-
                     cg.ID = reader.GetInt32(0);
                     cg.CategoryName = reader.GetString(1);
                     cg.Descripton = reader.GetString(2);
-
                 }
                 return cg;
             }
@@ -128,27 +126,78 @@ namespace DataAccessLayer
             finally { con.Close(); }
         }
         #endregion
+        #region Customer Metots
+        public List<Customer> customersList()
+        {
+            List<Customer> customers = new List<Customer>();
+            try
+            {
+                cmd.CommandText = "SELECT CustomerID,CompanyName,ContactName,ContactTitle,Address,City,Region,PostalCode,Country,Phone,Fax From Customers";
+                cmd.Parameters.Clear();
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    Customer cs = new Customer();
+                    cs.CustomerID = reader.GetString(0);
+                    cs.CompanyName = reader.GetString(1);
+                    cs.ContactName = reader.GetString(2);
+                    cs.ContactTitle = reader.GetString(3);
+                    cs.Address = reader.GetString(4);
+                    cs.City = reader.GetString(5);
+                    cs.Region = !reader.IsDBNull(6) ? reader.GetString(6) : "";
+                    cs.PostalCode = !reader.IsDBNull(7) ? reader.GetString(7) : "" ;
+                    cs.Country = reader.GetString(8);
+                    cs.Phone = reader.GetString(9);
+                    cs.Fax = !reader.IsDBNull(10) ? reader.GetString(10) : "";
+                    customers.Add(cs);
+
+                }
+                return customers;
+            }
+            catch
+            {
+                return null;
+            }
+            finally { con.Close(); }
+        }
+        public Customer getCustomers(int id)
+        {
+           
+            try
+            {
+                cmd.CommandText = "SELECT CustomerID,CompanyName,ContactName,ContactTitle,Address,City,Region,PostalCode,Country,Phone,Fax From Customers Where CustomerID=@id";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@id",id);
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                Customer cs = new Customer();
+                while (reader.Read())
+                {
+                    cs.CustomerID = reader.GetString(0);
+                    cs.CompanyName = reader.GetString(1);
+                    cs.ContactName = reader.GetString(2);
+                    cs.ContactTitle = reader.GetString(3);
+                    cs.Address = reader.GetString(4);
+                    cs.City = reader.GetString(5);
+                    cs.Region = !reader.IsDBNull(6) ? reader.GetString(6) : "";
+                    cs.PostalCode = !reader.IsDBNull(7) ? reader.GetString(7) : "" ;
+                    cs.Country = reader.GetString(8);
+                    cs.Phone = reader.GetString(9);
+                    cs.Fax = !reader.IsDBNull(10) ? reader.GetString(10) : "";
+                }
+                return cs;
+            }
+            catch
+            {
+                return null;
+            }
+            finally { con.Close(); }
+        }
+        #endregion
         #region Employee Login
-        
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
+
+
         public Employes GetEmployee(int id)
         {
             try
