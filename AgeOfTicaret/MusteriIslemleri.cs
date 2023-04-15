@@ -68,6 +68,7 @@ namespace AgeOfTicaret
             tb_faxx.Text = c.Fax;
             btn_updateCustomer.Visible = true;
 
+
         }
 
         private void TSMI_delete_Click(object sender, EventArgs e)
